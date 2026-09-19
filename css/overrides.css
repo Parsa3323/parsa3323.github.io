@@ -1,0 +1,62 @@
+.topbar{height:112px}
+.nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:7px}
+.nav a{font-size:0;display:flex;align-items:center;gap:0;width:40px;height:40px;padding:0;justify-content:center;position:relative}
+.nav a:hover{font-size:0;width:40px}
+.nav-label{position:absolute;left:50%;top:calc(100% + 9px);transform:translateX(-50%) translateY(-4px);opacity:0;pointer-events:none;white-space:nowrap;font-size:12px;color:#fff;transition:opacity .2s ease,transform .2s ease}
+.nav a:hover .nav-label{opacity:1;transform:translateX(-50%) translateY(0)}
+.nav a{width:48px;height:48px}
+.nav a:hover{width:48px}
+.nav a svg{display:block!important;flex:0 0 19px;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card-role{font-size:13px}
+.intro{font-size:15px}
+.button{font-size:13px;padding:15px 18px 15px 21px}
+.stats span{font-family:Poppins,sans-serif;font-style:normal;font-weight:400;color:rgb(153,143,143);font-size:16px;line-height:19px;text-transform:none}
+.intro,.section-copy,.toolkit-copy>p:last-child,.contact-note{font-family:Poppins,sans-serif;font-style:normal;font-weight:400;color:rgb(153,143,143);font-size:16px;line-height:19px}
+.card-links a svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card-links a:first-child svg{fill:currentColor;stroke:none}
+.skills span{font-size:16px;padding:14px 20px}
+.advanced-card{background:#f15b2a}
+.advanced-art{background:#f15b2a url('https://opengraph.githubassets.com/1/Parsa3323/AdvancedArmorStands') center/cover no-repeat;border-color:#ffffff66}
+.advanced-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(102,25,8,.7))}
+.advanced-art .art-label{z-index:1;color:#fff;font-weight:600;text-shadow:0 2px 10px #421204}
+.deposit-art{background:#1c3768 url('https://opengraph.githubassets.com/1/Parsa3323/BedWars1058-Deposit') center/cover no-repeat}
+.deposit-art:after{content:"";position:absolute;inset:0;background:rgba(28,55,104,.58)}
+.deposit-art .server-box,.deposit-art .pixel-line{z-index:1;position:relative}
+.animator-art{background:linear-gradient(135deg,#e55729 0%,#b72e17 100%);overflow:hidden}
+.animator-art:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 28px,#ff9b6c33 29px 31px,transparent 32px 70px)}
+.animation-frame{position:absolute;width:82px;height:112px;border:2px solid #ffd0b7;border-radius:42% 42% 10px 10px;bottom:36px;transform-origin:bottom center}.frame-one{left:58px;transform:rotate(-19deg);opacity:.55}.frame-two{left:100px;transform:rotate(0deg);border-color:#fff}.frame-three{left:142px;transform:rotate(19deg);opacity:.55}.animator-art .art-label{z-index:1;color:#fff;font-size:16px;font-weight:600;left:18px;top:17px}
+body,.nav a,.card-links a,.project-card,.feature,.skills span{cursor:none}.cursor-dot,.cursor-ring{position:fixed;left:0;top:0;z-index:101;pointer-events:none;border-radius:50%;will-change:transform;mix-blend-mode:difference}.cursor-dot{width:8px;height:8px;margin:-4px 0 0 -4px;background:#fff}.cursor-ring{width:30px;height:30px;margin:-15px 0 0 -15px;border:1px solid #fff;transition:width .2s ease,height .2s ease,margin .2s ease}.cursor-hover .cursor-ring{width:42px;height:42px;margin:-21px 0 0 -21px}.deposit-art,.animator-art{background-image:url('https://opengraph.githubassets.com/1/Parsa3323/BedWars1058-Deposit');background-position:center;background-size:cover;background-repeat:no-repeat}.animator-art{background-image:url('https://opengraph.githubassets.com/1/Parsa3323/AdvancedArmorStands')}.deposit-art:after,.animator-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.3))}
+.cursor-dot,.cursor-ring{cursor:none!important}a,button,input,textarea,select,[role="button"]{cursor:none!important}::selection{background:var(--orange);color:#171313}::-moz-selection{background:var(--orange);color:#171313}
+.cursor-dot,.cursor-ring{animation:none!important}.cursor-click .cursor-ring{border-color:#ff3b30;animation:cursorShake .42s ease-in-out}.cursor-click .cursor-dot{background:#ff3b30}@keyframes cursorShake{0%,100%{margin-left:-15px}20%{margin-left:-20px}40%{margin-left:-10px}60%{margin-left:-20px}80%{margin-left:-11px}}
+.cursor-ring{position:fixed;transition:width .2s ease,height .2s ease,margin .2s ease,border-color .18s ease}.cursor-ring::after{content:"";position:absolute;inset:-1px;border:1px solid transparent;border-radius:50%;pointer-events:none;opacity:0}.cursor-click .cursor-ring{border-color:#ff3b30;animation:none}.cursor-click .cursor-ring::after{border-color:#ff3b30;animation:dynamicIslandShake .42s cubic-bezier(.36,.07,.19,.97) both}@keyframes dynamicIslandShake{0%{transform:translateX(0);opacity:0}10%{opacity:1}12%{transform:translateX(-7px)}24%{transform:translateX(7px)}36%{transform:translateX(-6px)}48%{transform:translateX(6px)}60%{transform:translateX(-4px)}72%{transform:translateX(4px)}84%{transform:translateX(-2px)}100%{transform:translateX(0);opacity:0}}
+.cursor-dot{transition:background .18s ease}
+.cursor-dot,.cursor-ring{transition:opacity .18s ease,background .18s ease,border-color .18s ease,width .2s ease,height .2s ease,margin .2s ease}.cursor-hidden .cursor-dot,.cursor-hidden .cursor-ring{opacity:0}
+.linkedin-icon .linkedin-bg{fill:currentColor;stroke:none}.linkedin-icon .linkedin-mark{fill:#f5f3ef;stroke:none}
+@media (pointer:coarse){body,.nav a,.card-links a,.project-card,.feature,.skills span{cursor:auto}.cursor-dot,.cursor-ring{display:none}}
+.feature small{font-size:10px}
+.feature h3{font-size:20px}
+.animator-art:before{display:none}
+.portrait{background:linear-gradient(145deg,#f35316,#a92a09);display:block}
+.portrait:after{content:none}
+.portrait .head,.portrait .neck,.portrait .shoulder,.portrait .highlight{display:block}
+.profile-card{background:var(--card);color:#171515;padding:18px 18px 24px;overflow:hidden}
+.portrait-wrap{height:350px;border-radius:12px;background:#d6440e;box-shadow:none}
+.profile-card h2{margin:22px 0 6px;color:#171515}
+.card-role{color:#686362}
+.card-links{margin-top:25px}
+.cursor-dot,.cursor-ring{z-index:130}
+.project-top{font-size:11px}
+.project-info h3{font-size:25px}
+.project-top a{color:inherit;text-decoration:none}
+.project-info p{font-size:13px;max-width:290px}
+.tags{font-size:10px}
+.feature.orange,.feature.lime{color:#111}
+.feature.orange .feature-icon,.feature.lime .feature-icon{color:#111}
+.feature h3{font-family:Poppins,sans-serif;font-style:normal;font-weight:500;color:rgb(21,19,18);font-size:24px;line-height:26px}
+.section-heading h2{font-family:Poppins,Arial,sans-serif;font-weight:600;font-size:70px}
+.stats strong{font-family:Poppins,Arial,sans-serif;font-weight:600;font-size:70px;letter-spacing:-4px}
+@media(max-width:550px){.nav a{font-size:0}.nav a:hover{font-size:0}.nav-label{font-size:11px}.feature h3{font-size:18px}.project-info h3{font-size:23px}.section-heading h2{font-size:50px}.stats strong{font-size:38px;letter-spacing:-2px}.stats span{font-size:13px;line-height:16px}}
+.source-popup{position:fixed;right:28px;bottom:28px;z-index:120;display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid #3d3836;border-radius:12px;background:#211e1d;color:#f7f4ef;box-shadow:0 14px 45px #0008;opacity:1;transform:translateY(calc(100vh + 40px));pointer-events:none;transition:transform .55s ease-out;font-size:13px}.source-popup.show{transform:translateY(0);pointer-events:auto;transition:transform .62s cubic-bezier(.25,1.08,.35,1)}.source-popup a{color:var(--orange);font-weight:600;text-decoration:none;white-space:nowrap}.source-popup a:hover{text-decoration:underline}
+.arrow svg,.contact-email svg,.footer a svg,.source-popup a svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.arrow{display:flex;align-items:center;justify-content:center}.contact-email span{display:inline-flex;vertical-align:middle}.footer a{display:inline-flex;align-items:center;gap:6px}
+@media(max-width:550px){.topbar{height:76px}.nav{display:flex;padding:4px}.nav a,.nav a:hover{width:39px;height:39px}.nav a svg{width:17px;height:17px}.nav-label{display:none!important}}
+html{scrollbar-color:var(--orange) var(--bg);scrollbar-width:thin}::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:#131212}::-webkit-scrollbar-thumb{background:#3a3431;border:2px solid #131212;border-radius:999px;cursor:none}::-webkit-scrollbar-thumb:hover{background:var(--orange)}::-webkit-scrollbar-corner{background:#131212}
